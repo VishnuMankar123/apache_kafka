@@ -22,7 +22,7 @@ services:
     depends_on:
       - zookeeper
 
-  project1:
+  deliveryboyapp:
     build: ../deliveryboyapp
     container_name: deliveryboyapp
     ports:
@@ -32,7 +32,7 @@ services:
     depends_on:
       - kafka
 
-  project2:
+  enduser:
     build: ../enduser
     container_name: enduser
     ports:
